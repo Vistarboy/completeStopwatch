@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STOP WATCH</title>
+    <link rel="stylesheet" href="STOP-WATCH.css" />
+  </head>
+  <body>
+    <div class="body">
+      <p class="heading">STOP WATCH</p>
+      <div class="mode-division">
+        <button class="stopWatch-button" title="Stop Watch mode">
+          STOPWATCH
+        </button>
+        <p class="mode">MODE</p>
+        <button class="countDown-button" title="Count Down Timer">TIMER</button>
+      </div>
+      <div class="separator">
+        <div class="button-and-display">
+          <div class="display">
+            <dv class="label-division">
+              <p class="label hour">HOURS</p>
+              <p class="label">MINUTES</p>
+              <p class="label second">SECONDS</p>
+            </dv>
+            <div class="time-display-division">
+              <div class="time hour-division">
+                <p class="hours">00</p>
+              </div>
+              <div class="time minutes-division">
+                <p class="minutes">00</p>
+              </div>
+              <div class="time seconds-division">
+                <p class="seconds">00</p>
+              </div>
+            </div>
+            <div class="input-display disappear">
+              <div class="input-division">
+                <input
+                  type="number"
+                  class="hours-input inputs"
+                  placeholder="HR"
+                />
+                <input
+                  type="number"
+                  class="minutes-input inputs"
+                  placeholder="MIN"
+                />
+                <input
+                  type="number"
+                  class="seconds-input inputs"
+                  placeholder="SEC"
+                />
+              </div>
+              <button class="set-timer-button">SET TIMER</button>
+            </div>
+          </div>
+          <div class="button-set">
+            <button class="start-button">START</button>
+            <button class="save-button">SAVE TIME</button>
+            <button class="reset-button">RESET</button>
+          </div>
+        </div>
+        <div class="saved-time-division">
+          <p class="saved-time-title">SAVED TIME(5)</p>
+          <div class="saved-time-container">
+            <div class="saved-records">
+              <p class="saved-time">1).00:00:00.0</p>
+              <button class="delete-records">delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="STOP-WATCH.js"></script>
+  </body>
+</html>
